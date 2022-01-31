@@ -181,7 +181,7 @@ export const Destroy = ({
         <>
           {!isConfirmed && (
             <Box flexDirection="column">
-              <Plan />
+              <Plan currentStackName={currentStack.name} plan={plan!} />
               <Confirm callback={confirmation} />
             </Box>
           )}
